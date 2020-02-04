@@ -44,7 +44,7 @@ git commit -m 'my awesome chart'
 git push
 ```
 
-## How does it work
+## This is just an example
 
 The included `Makefile` is a farily simple example. It will package `./src/mychart` into the `./index/` directory and update the `./index/index.yaml` file. Feel free to adapt it or replace it with your favorite building tool. The `helm package` and `helm repo index` commands inside are what really matters.
 
