@@ -1,4 +1,4 @@
-# Chart Repo Example
+# Helm Chart Repo Example
 
 You can use Github User Content to host basically any static content you commit to your git repository.
 
