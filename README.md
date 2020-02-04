@@ -55,6 +55,7 @@ Github User Content for your repo is accessible at:
 <https://raw.githubusercontent.com/{USERNAME}/{REPO_NAME}/master/index/index.yaml>
 
 > `{USERNAME}` is your Github username or group name for your project.
+> 
 > `{REPO_NAME}` is the name of your Github repository.
 
 For example, to add this particular repo to your local Helm installation:
