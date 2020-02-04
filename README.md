@@ -4,9 +4,25 @@ You can use Github User Content to host basically any static content you commit 
 
 This project shows an example of how you can host your own Helm Chart repo. Checkout the included `Makefile` for examples of how to package and index Helm charts.
 
-## Create your own chart
+## Create an empty Github repository
 
-Given a public Github repository you own, create a new chart using `helm create`.
+Official docs: <https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository>
+
+Remember to make your repository Public.
+
+## Clone it and create your own chart
+
+You can develop and test new charts locally.
+
+```shell
+git clone {MY_REPO}
+mkdir index src
+```
+
+* `src` Directory for your charts source code.
+* `index` Directory for your packaged and published charts.
+
+Create a new chart using `helm create`.
 
 ```shell
 helm create ./src/mychart
@@ -15,10 +31,12 @@ helm create ./src/mychart
 Once you are done editing your chart, you can package and index it.
 
 ```shell
-make mychart
+helm package src/mychart -d index/
+cd index
+helm repo index .
 ```
 
-Now you can simply commit and push to your public Github repository.
+To publish the new index and chart, simply commit and push.
 
 ```shell
 git add .
