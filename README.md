@@ -1,6 +1,6 @@
 # Helm Chart Repo Example
 
-You can use Github User Content to host basically any static content you commit to your git repository.
+You can use Github User Content to host basically any static content you commit to your git repository. The idea is that every Github repository is also available at <https://raw.githubusercontent.com>.
 
 This project shows an example of how you can host your own Helm Chart repo. Checkout the included `Makefile` for examples of how to package and index Helm charts.
 
